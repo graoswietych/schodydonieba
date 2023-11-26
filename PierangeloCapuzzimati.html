@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PierangeloCapuzzimati</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <div id="logo">Schody do nieba</div>
+
+
+        <h1>Pierangelo Capuzzimati</h1>
+        <div id="zdj">
+            <img src="święci/foto-Perangelo-Capuzzimati.jpg--pierangelo_capuzzimati.jpg" alt="PierangeloCapuzzimati">
+        </div>
+
+        <h1>Życie Pierangelo</h1>
+<br> 
+<div class="process-wrapper">
+<div id="progress-bar-container">
+	<ul>
+		<li class="step step01 active"><div class="step-inner"></div></li>
+		<li class="step step02"><div class="step-inner"></div></li>
+		<li class="step step03"><div class="step-inner"></div></li>
+		<li class="step step04"><div class="step-inner"></div></li>
+		<li class="step step05"><div class="step-inner"></div></li>
+	</ul>
+	
+	<div id="line">
+		<div id="line-progress"></div>
+	</div>
+</div>
+
+<div id="progress-content-section">
+	<div class="section-content discovery active">
+		<h2>Dzieciństwo i nauka</h2>
+		<p>Pierangelo Capuzzimati urodził się w 1990 roku w Taranto. Wychowywał się w Faggiano z rodzicami i siostrą Sarą. Już jako dziecko wyróżniał się głęboką refleksją i zainteresowaniem wiedzą.</p>
+	</div>
+	
+	<div class="section-content strategy">
+		<h2>Diagnoza i walka z chorobą</h2>
+		<p>W lecie 2004 roku u Pierangela zdiagnozowano postać białaczki. Mimo choroby kontynuował naukę, również samodzielnie. Traktował chorobę jako okazję do medytacji i zbliżenia się do Jezusa jako przyjaciela.</p>
+	</div>
+	
+	<div class="section-content creative">
+		<h2>Trudności i trapienie</h2>
+		<p>Pomimo ciągłych hospitalizacji i leczenia, Pierangelo kontynuował naukę, zdobywając imponującą wiedzę. Z czasem zmagania z chorobą stały się dla niego duchową walką, którą przeżywał ze stoickim spokojem.</p>
+	</div>
+	
+	<div class="section-content production">
+		<h2>Wiara jako źródło siły</h2>
+		<p>Wiara stała się centralnym punktem życia Pierangela. Po przyjęciu sakramentów, jego życie duchowe stawało się fundamentem, którym podtrzymywał się w chorobie. Uważał chorobę za swoją misję.</p>
+	</div>
+	
+	<div class="section-content analysis">
+		<h2>Śmierć i proces beatyfikacyjny</h2>
+		<p>Pierangelo zmarł 30 kwietnia 2008 roku w wieku 17 lat, pozostawiając po sobie świadectwo niezwykłej siły ducha i wiary. W 2018 roku Watykan zezwolił na rozpoczęcie procesu beatyfikacyjnego dla Pierangela i innej młodej osoby, Paoli Adamo.</p>
+	</div>
+	</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ <script>
+    
+    $(".step").click( function() {
+	$(this).addClass("active").prevAll().addClass("active");
+	$(this).nextAll().removeClass("active");
+});
+
+$(".step01").click( function() {
+	$("#line-progress").css("width", "3%");
+	$(".discovery").addClass("active").siblings().removeClass("active");
+});
+
+$(".step02").click( function() {
+	$("#line-progress").css("width", "25%");
+	$(".strategy").addClass("active").siblings().removeClass("active");
+});
+
+$(".step03").click( function() {
+	$("#line-progress").css("width", "50%");
+	$(".creative").addClass("active").siblings().removeClass("active");
+});
+
+$(".step04").click( function() {
+	$("#line-progress").css("width", "75%");
+	$(".production").addClass("active").siblings().removeClass("active");
+});
+
+$(".step05").click( function() {
+	$("#line-progress").css("width", "100%");
+	$(".analysis").addClass("active").siblings().removeClass("active");
+});
+
+ 
+    </script>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KarolAcutis</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <div id="logo">Schody do nieba</div>
+
+
+        <h1>Karol Acutis</h1>
+        <div id="zdj">
+            <img src="święci/images (1).jpg" alt="KarolAcutis">
+        </div>
+
+        <h1>Życie Karola</h1>
+<br> 
+<div class="process-wrapper">
+<div id="progress-bar-container">
+	<ul>
+		<li class="step step01 active"><div class="step-inner"></div></li>
+		<li class="step step02"><div class="step-inner"></div></li>
+		<li class="step step03"><div class="step-inner"></div></li>
+		<li class="step step04"><div class="step-inner"></div></li>
+		<li class="step step05"><div class="step-inner"></div></li>
+	</ul>
+	
+	<div id="line">
+		<div id="line-progress"></div>
+	</div>
+</div>
+
+<div id="progress-content-section">
+	<div class="section-content discovery active">
+		<h2>Wczesne lata i nawrócenie</h2>
+		<p>Karol Acutis urodził się 3 maja 1991 roku w Londynie, a w wieku 7 lat przeniósł się z rodziną do Mediolanu we Włoszech. W wieku 14 lat doświadczył nawrócenia, co stało się punktem zwrotnym w jego życiu. Jego zainteresowanie religią i wiarą katolicką zaczęło się rozwijać w tym okresie.</p>
+	</div>
+	
+	<div class="section-content strategy">
+		<h2>Droga Krzyżowa</h2>
+		<p>Po nawróceniu Karol Acutis zaczął prowadzić życie pełne modlitwy i oddania Bogu. Bardzo często uczestniczył we Mszy Świętej i praktykował różne formy pobożności, w tym modlitwę różańcową i Drogę Krzyżową. To było ważne dla jego duchowego rozwoju.</p>
+	</div>
+	
+	<div class="section-content creative">
+		<h2>Miłość do Eucharystii</h2>
+		<p>Karol miał głęboką miłość do Eucharystii, co było widoczne w jego regularnym uczestnictwie we Mszy Świętej i adoracji Najświętszego Sakramentu. Jego wiara w obecność Jezusa w Eucharystii była kluczowym aspektem jego życia duchowego.</p>
+	</div>
+	
+	<div class="section-content production">
+		<h2>Świadomość roli internetu</h2>
+		<p>Karol Acutis zdawał sobie sprawę z rosnącego znaczenia internetu w codziennym życiu i docenił jego potencjał do szerzenia wiary katolickiej. Zaprojektował stronę internetową dokumentującą cuda eucharystyczne na całym świecie, aby dzielić się swoją wiarą z innymi.</p>
+	</div>
+	
+	<div class="section-content analysis">
+		<h2>Choroba i śmierć</h2>
+		<p>W wieku 15 lat Karol Acutis został zdiagnozowany z ostrą białaczką. Mimo swojego cierpienia nie tracił wiary i modlitwy. Zmarł 12 października 2006 roku. Jego postawa wobec choroby i śmierci była inspirująca dla wielu, a jego życie stało się tematem wielu publikacji, a nawet procesu beatyfikacyjnego.</p>
+	</div>
+	</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ <script>
+    
+    $(".step").click( function() {
+	$(this).addClass("active").prevAll().addClass("active");
+	$(this).nextAll().removeClass("active");
+});
+
+$(".step01").click( function() {
+	$("#line-progress").css("width", "3%");
+	$(".discovery").addClass("active").siblings().removeClass("active");
+});
+
+$(".step02").click( function() {
+	$("#line-progress").css("width", "25%");
+	$(".strategy").addClass("active").siblings().removeClass("active");
+});
+
+$(".step03").click( function() {
+	$("#line-progress").css("width", "50%");
+	$(".creative").addClass("active").siblings().removeClass("active");
+});
+
+$(".step04").click( function() {
+	$("#line-progress").css("width", "75%");
+	$(".production").addClass("active").siblings().removeClass("active");
+});
+
+$(".step05").click( function() {
+	$("#line-progress").css("width", "100%");
+	$(".analysis").addClass("active").siblings().removeClass("active");
+});
+
+ 
+    </script>
+    </div>
+
+</body>
+</html>
