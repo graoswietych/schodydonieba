@@ -14,7 +14,8 @@ body
     height: 150px;
     background-color: #F4EAE0;
     display: flex;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -151,9 +152,7 @@ body
 
 #zdj
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     width: 90%;
 }
 
