@@ -14,8 +14,7 @@ body
     height: 150px;
     background-color: #F4EAE0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 
